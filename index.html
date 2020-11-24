@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <title>Task List</title>
+</head>
+<style>
+    .dark-mode{
+        background: #453A38;
+        color: white;
+    }
+    h6{
+        text-align: center;
+        letter-spacing: 0.9rem;
+    }
+</style>
+<body>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="card" id="main">
+                <div class="card-content">
+                    <div class="card-title">Task List</div>
+                    <div class="row">
+                        <form id="task-form">
+                            <div class="input-field col-12">
+                                    <input type="text" name="task" id="task">
+                                    <label for="task">New Task</label>
+                                </div>
+                                <input type="submit" value="Add Task" class="btn">
+                                <a id="toggle" value="Dark Mode" class="btn pull-right">Dark Mode</a>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="card-action">
+                        <h5 id="task-title">Tasks</h5>
+                        <div class="input-field col-12">
+                            <input type="text" name="filter" id="filter">
+                            <label for="filter">Filter</label>
+                        </div>
+                        <ul class="collection"></ul>
+                        <a href="#" class="clear-tasks btn black">Clear Tasks</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+       <h6>A Gimna Katugampala Production</h6>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.js"
+    integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+    crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
